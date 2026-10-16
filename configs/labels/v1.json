@@ -1,0 +1,9 @@
+{
+  "version":"1",
+  "relevance":["relevant","irrelevant","uncertain"],
+  "sentiment":["positive","neutral","negative","mixed","unknown"],
+  "aspects":["拥挤客流","延误准点","设施设备","卫生环境","安检安全","票务支付","服务态度","线路换乘","舒适度噪音","无障碍"],
+  "label_source":["synthetic_rule","model","human","legacy_prediction"],
+  "event_verification":"unverified until independent corroboration; unavailable in current agent tools",
+  "legacy_mapping":"../../docs/data/legacy-label-map.json"
+}

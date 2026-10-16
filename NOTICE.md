@@ -4,6 +4,6 @@
 
 本项目延续旧地铁社媒满意度研究的业务背景。旧研究为团队成果，其成员材料、原始数据、旧代码、模型密钥与浏览器环境仅在本地保存，不随此仓库分发，也不纳入本仓库 MIT 授权范围。
 
-LangGraph、Pydantic 等依赖遵循各自许可证，依赖版本和来源记录在 `uv.lock`。BettaFish、Deep Agents、Ragas、Langfuse、Dify 用作调研与架构学习来源，本轮未复制其实现。MediaCrawler 是外部可选采集工具，不是本仓库组成部分。
+LangGraph、Pydantic、FastAPI、Starlette、Uvicorn、HTTPX 等依赖遵循各自许可证，依赖版本和来源记录在 `uv.lock`；安装时随上游包分发其许可证，不将依赖代码宣称为第一方实现。BettaFish、Deep Agents、Ragas、Langfuse、Dify 用作调研与架构学习来源，本轮未复制其实现。MediaCrawler 是外部可选采集工具，不是本仓库组成部分。
 
 `src/metro_agent/resources/demo.json` 是本项目专门编写的合成样例，没有真实人员、真实事件或真实服务质量结论。公开复现不要求访问私有社媒数据或登录账号。

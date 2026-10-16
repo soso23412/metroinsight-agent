@@ -38,7 +38,11 @@ jobs:
         run: uv run --frozen --offline pytest
       - name: Offline demo
         run: uv run --frozen --offline metro-agent demo --offline --output artifacts/ci-demo
+      - name: Agent task and retrieval contracts (synthetic, no model calls)
+        run: uv run --frozen --offline metro-agent evaluate --output artifacts/ci-evaluation
       - name: Build wheel and source distribution
         run: uv build
+      - name: Check installable distribution contents
+        run: uv run --frozen --offline python scripts/check_distribution.py
       - name: Check public file policy
         run: uv run --frozen --offline python scripts/check_public_tree.py

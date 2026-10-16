@@ -1,0 +1,315 @@
+{
+  "version": "0.2.0",
+  "scope": "synthetic_engineering_contracts_not_blind_quality_benchmark",
+  "model_calls": 0,
+  "contract_sha256": "c293e496c495c8ca3293946e70829cecc7c8365f142dc176220f5e5eb56cefce",
+  "dataset_id": "demo-93e2ba8a23818a39dc10",
+  "tasks": [
+    {
+      "id": "t01",
+      "run_id": "e1d9e71675d14071a22a3418ede5783e",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "line": true,
+        "evidence": true
+      },
+      "passed": true
+    },
+    {
+      "id": "t02",
+      "run_id": "af76e614e28045b883d62d26fd350743",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "line": true,
+        "evidence": true
+      },
+      "passed": true
+    },
+    {
+      "id": "t03",
+      "run_id": "9d4b00ff38814874b395af14df115647",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "line": true,
+        "evidence": true
+      },
+      "passed": true
+    },
+    {
+      "id": "t04",
+      "run_id": "9992a84c09c042a6bade0a6bf1aa4fe2",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "city": true,
+        "evidence": true
+      },
+      "passed": true
+    },
+    {
+      "id": "t05",
+      "run_id": "5fbbebcf0fb34c90ba76740d7fe146a1",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "city": true,
+        "evidence": true
+      },
+      "passed": true
+    },
+    {
+      "id": "t06",
+      "run_id": "3435ac1952334fa69a912513108b42c9",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "evidence": true
+      },
+      "passed": true
+    },
+    {
+      "id": "t07",
+      "run_id": "b37eb235160544aaa127e003222253a8",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "group_by": true,
+        "evidence": true
+      },
+      "passed": true
+    },
+    {
+      "id": "t08",
+      "run_id": "796720b2dbf04d2394b95d5c96fe8221",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "timeline": true,
+        "evidence": true
+      },
+      "passed": true
+    },
+    {
+      "id": "t09",
+      "run_id": "01480dd79f9447d2a4b8bb18c59ea7db",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "evidence": true
+      },
+      "passed": true
+    },
+    {
+      "id": "t10",
+      "run_id": "9bf4a891c08b4451a7de0a7b697c795f",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "evidence": true
+      },
+      "passed": true
+    },
+    {
+      "id": "t11",
+      "run_id": "af8eb6f44cb74b26add8e9d3b3a58182",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "evidence": true
+      },
+      "passed": true
+    },
+    {
+      "id": "t12",
+      "run_id": "c119b159f1b04d27945051b728733e38",
+      "checks": {
+        "status": true,
+        "report": true,
+        "number": true,
+        "evidence": true
+      },
+      "passed": true
+    }
+  ],
+  "task_passed": 12,
+  "task_count": 12,
+  "retrieval": [
+    {
+      "query": "拥挤",
+      "expected": [
+        "demo-01",
+        "demo-04"
+      ],
+      "retrieved": [
+        "demo-04",
+        "demo-01"
+      ],
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "substring_recall_at_5": 1.0,
+      "empty_correct": null
+    },
+    {
+      "query": "晚点",
+      "expected": [
+        "demo-02"
+      ],
+      "retrieved": [
+        "demo-02",
+        "demo-03"
+      ],
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "substring_recall_at_5": 1.0,
+      "empty_correct": null
+    },
+    {
+      "query": "扶梯",
+      "expected": [
+        "demo-05"
+      ],
+      "retrieved": [
+        "demo-05"
+      ],
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "substring_recall_at_5": 1.0,
+      "empty_correct": null
+    },
+    {
+      "query": "轮椅",
+      "expected": [
+        "demo-06"
+      ],
+      "retrieved": [
+        "demo-06"
+      ],
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "substring_recall_at_5": 1.0,
+      "empty_correct": null
+    },
+    {
+      "query": "停运",
+      "expected": [
+        "demo-07"
+      ],
+      "retrieved": [
+        "demo-07"
+      ],
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "substring_recall_at_5": 1.0,
+      "empty_correct": null
+    },
+    {
+      "query": "垃圾",
+      "expected": [
+        "demo-09"
+      ],
+      "retrieved": [
+        "demo-09"
+      ],
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "substring_recall_at_5": 1.0,
+      "empty_correct": null
+    },
+    {
+      "query": "支付",
+      "expected": [
+        "demo-12"
+      ],
+      "retrieved": [
+        "demo-12"
+      ],
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "substring_recall_at_5": 1.0,
+      "empty_correct": null
+    },
+    {
+      "query": "地铁跑酷",
+      "expected": [
+        "demo-10"
+      ],
+      "retrieved": [
+        "demo-10",
+        "demo-11",
+        "demo-08",
+        "demo-12"
+      ],
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "substring_recall_at_5": 1.0,
+      "empty_correct": null
+    },
+    {
+      "query": "准点",
+      "expected": [
+        "demo-03"
+      ],
+      "retrieved": [
+        "demo-03",
+        "demo-02"
+      ],
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "substring_recall_at_5": 1.0,
+      "empty_correct": null
+    },
+    {
+      "query": "换乘",
+      "expected": [
+        "demo-04",
+        "demo-06"
+      ],
+      "retrieved": [
+        "demo-04",
+        "demo-06"
+      ],
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "substring_recall_at_5": 1.0,
+      "empty_correct": null
+    },
+    {
+      "query": "异味",
+      "expected": [
+        "demo-09"
+      ],
+      "retrieved": [
+        "demo-09"
+      ],
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "substring_recall_at_5": 1.0,
+      "empty_correct": null
+    },
+    {
+      "query": "火星独角兽",
+      "expected": [],
+      "retrieved": [],
+      "recall_at_5": null,
+      "recall_at_10": null,
+      "substring_recall_at_5": null,
+      "empty_correct": true
+    }
+  ],
+  "mean_recall_at_5": 1.0,
+  "limits": "Authored synthetic cases known to implementation; NOT real-model accuracy or human blind-test evidence."
+}

@@ -2,37 +2,40 @@
 
 更新时间：2026-10-16，Asia/Shanghai。
 
-**P0接手规划完成；P1离线工程基线已实现并通过本地验证；P2数据字典与正式评测未开始。**
+**v0.2.0：Agent 主链路工程已交付，离线验收通过；真实模型效果和人工盲测未验证。** 用户本轮明确要求零模型费用，未调用模型或读取历史密钥。
 
-GitHub：[soso23412/metroinsight-agent](https://github.com/soso23412/metroinsight-agent)。用户已授权持续同步，提交前继续执行公开文件检查。代码提交03c07c1的[CI运行](https://github.com/soso23412/metroinsight-agent/actions/runs/38869187149)已成功，四组Windows/Linux与Python矩阵均通过。
+仓库：[soso23412/metroinsight-agent](https://github.com/soso23412/metroinsight-agent)。持续同步授权有效，仍在推送前检查公开文件。P1 的 CI 记录为历史；v0.2.0 的远程 CI 结果在本轮工作日志更新，不混用旧结果。
 
-## 已交付
+## 当前能力
 
-- Python/uv/src工程、依赖锁定与CLI；旧`platform`归档到本地`legacy/platform`，消除标准库冲突。
-- Pydantic schema、相关性/情绪/多维度/事件独立字段、原文证据偏移验证。
-- 流式小红书JSONL和微博CSV导入、来源哈希与行号、坏行对账、版本化数据集。
-- 数据集/平台/原ID隔离、事务、显式失败、标注版本缓存与失败项重跑。
-- 12条合成数据的LangGraph固定工作流，SQL统计及离线HTML/JSON报告。
-- 30项本地测试通过；lint与格式检查通过；wheel和sdist构建、内容检查通过。
-- 根Git与GitHub公开仓库，四组CI成功；从GitHub清洁克隆、新环境安装、30项测试与离线演示成功。安装包可在仓库外工作目录运行；无私有数据或密钥上传。
+- P1 流式导入、数据版本、严格 schema、评论关联、事务、标签缓存与离线报告。
+- LangGraph model/tools 条件循环、六个受控工具、中文 FTS5/BM25 词法 RAG、事件候选时间线。
+- finish_report 只能引用当前任务观察过的 SQL 结果和证据；数字不由模型自由填入。
+- SQLite 私有 checkpoint、工具结果与游标提交、幂等 key、lease、数据/模型变化拒绝恢复。
+- 步数/时间/token/费用预留，真实 usage 单独记录；模型不确定请求暂停并需明确复核。
+- HTTPS Chat Completions 模型与结构化标注适配器，HTTP mock 验证；本轮未在线调用。
+- FastAPI 本机 Web、后台任务、状态查询、SSE 重放、报告下载；在线入口默认关闭。
+- 数据字典、待复核导出、近重复/显式事件分组、按组切分、人工标签回写、基线与指标脚本。
+- 公开合成任务/检索合同、故障目录、复现指南、界面截图和面试/简历证据材料。
 
-当前入口：`uv sync --locked`，然后`uv run --frozen --offline metro-agent demo --offline --output artifacts/demo`。
+## 当前入口
 
-## 核验过的私有历史资产
+```sh
+uv sync --locked
+uv run --frozen --offline metro-agent serve
+uv run --frozen --offline metro-agent evaluate --output artifacts/evaluation
+```
 
-80条小红书内容、571条评论已导入新库并对账；其中14条图片评论、1条空评论有显式状态，旧库内容未改变。旧微博CSV和人工标注表仍只在本地保存，详见P0审查。
+打开 http://127.0.0.1:8000 。CLI 与恢复说明见 [operations](operations.md)。
 
-## 尚未实现或验证
+## 验收边界
 
-1. 真实模型接入与独立效果评测；当前演示是合成规则，不是LLM。
-2. Agent工具调用循环、RAG、向量检索、任务checkpoint和API界面。
-3. 人工黄金集、旧C1-C9/0标签解释与新标签映射；旧75%或90%+不用于新版简历。
-4. 采集、OCR、付费批处理和跨平台泛化；这些能力不能通过现有测试推定。
+12个公开合成任务与12个合成检索查询只验证工程合同；正式200–400条人工金标、40任务盲测、真实模型成功率/分类F1、引用支持率与消融尚未完成，不以合成通过率替代。C1–C9/0 映射仍未解决。向量检索、OCR、MCP、多Agent、Docker和公网服务未交付，不作为能力宣传。
 
-## 下一项具体任务
+历史原始资料留在本地忽略目录，未改写旧库。80条小红书/571条评论的既有导入对账仍有效，历史XHS不计入盲测。新的人工待复核包也属于私有资料。
 
-按[执行计划](plans/2026-10-16-metro-agent-implementation.md)开始T04：数据字典、标注规范、近重复/同事件分组、开发/测试切分与数据卡。过去80条小红书样本只作开发诊断，不计入盲测。无需等待付费API即可推进这些工作。
+## 下一项需要真实证据的工作
 
-## 继续工作前读取
+先由人复核规范与首批数据并冻结测试集；后续如获明确预算，再选择模型跑小样本在线验收及正式对照。工程可离线复现，不能在当前状态下填写真实业务效果指标。
 
-`AGENTS.md` → 本文件 → [P1日志](logs/2026-10-16-p1-foundation.md) → 当前阶段计划。原始P0日志保留为历史，不代表当前实现状态。
+[本轮日志](logs/2026-10-16-agent-delivery.md) · [验收报告](evaluation/final-report.md) · [最初计划与差异](plans/2026-10-16-metro-agent-implementation.md)

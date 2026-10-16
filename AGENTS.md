@@ -58,5 +58,7 @@
 
 ## 当前验收与优先级
 
-35. 当前已完成P0接手规划和P1离线工程基线；历史原型已归档至本地`legacy/platform/`。新代码在`src/metro_agent/`，执行`uv sync --locked`、`uv run --frozen --offline pytest`、`uv run --frozen --offline ruff check .`与`uv run --frozen --offline ruff format --check .`完成核心检查。随后建设数据字典、黄金评测集、工具循环和证据检索。
+35. 当前v0.2.0已实现受控Agent循环、中文词法RAG、checkpoint、资源限额、模型适配器、Web与复核/评测工具；历史原型留在本地`legacy/platform/`。先读STATUS和最新日志，执行`uv sync --locked`、`uv run --frozen --offline pytest`、`uv run --frozen --offline ruff check .`、`uv run --frozen --offline ruff format --check .`与`uv run --frozen --offline metro-agent evaluate --output artifacts/evaluation`验证。不得把公开合成合同的通过率称为真实模型或人工盲测效果。
 36. 发布门槛及指标定义以执行计划为准；若评测未达标，记录失败与原因并继续改进，不改口径隐藏失败、不降低阈值后声称原目标已达成。
+
+37. 用户2026-10-16本轮明确选择“先完成全部工程与离线验收，暂不产生模型费用”。此约束持续有效；可以实现和用HTTP mock验证模型接口，但不得因此执行真实调用、读取旧密钥或悄悄开展付费标注。人工黄金集和在线指标待独立验收，不能为宣称项目完整而造标注或改验收口径。

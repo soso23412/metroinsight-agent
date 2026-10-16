@@ -1,0 +1,7 @@
+{
+  "version":"legacy-map-unresolved-v1",
+  "status":"requires_original_definition_and_human_review",
+  "normalization":"strip whitespace and uppercase; always retain original label",
+  "mapping":{"C1":null,"C2":null,"C3":null,"C4":null,"C5":null,"C6":null,"C7":null,"C8":null,"C9":null,"0":null,"":null},
+  "policy":"Never map an unresolved label or a model prediction to human ground truth."
+}

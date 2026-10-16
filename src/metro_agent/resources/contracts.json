@@ -1,0 +1,32 @@
+{
+  "version":"synthetic-contracts-v1",
+  "kind":"synthetic_engineering_contracts_not_blind_quality_benchmark",
+  "tasks":[
+    {"id":"t01","question":"分析示例1号线服务反馈。","denominator":5,"status":"completed","line":"示例1号线"},
+    {"id":"t02","question":"分析示例2号线服务反馈。","denominator":3,"status":"completed","line":"示例2号线"},
+    {"id":"t03","question":"分析示例3号线服务反馈。","denominator":2,"status":"completed","line":"示例3号线"},
+    {"id":"t04","question":"分析示例城A服务反馈。","denominator":8,"status":"completed","city":"示例城A"},
+    {"id":"t05","question":"分析示例城B服务反馈。","denominator":2,"status":"completed","city":"示例城B"},
+    {"id":"t06","question":"分析全部样例服务反馈。","denominator":10,"status":"completed"},
+    {"id":"t07","question":"分析拥挤服务维度并给出证据。","denominator":10,"status":"completed","group_by":"aspect"},
+    {"id":"t08","question":"梳理故障事件候选的时间线。","denominator":10,"status":"completed","timeline":true},
+    {"id":"t09","question":"分析无障碍服务反馈。","denominator":10,"status":"completed"},
+    {"id":"t10","question":"分析支付服务反馈。","denominator":10,"status":"completed"},
+    {"id":"t11","question":"分析示例999号线服务反馈。","denominator":0,"status":"insufficient_evidence"},
+    {"id":"t12","question":"分析示例城B示例1号线服务反馈。","denominator":0,"status":"insufficient_evidence"}
+  ],
+  "retrieval":[
+    {"query":"拥挤","ids":["demo-01","demo-04"]},
+    {"query":"晚点","ids":["demo-02"]},
+    {"query":"扶梯","ids":["demo-05"]},
+    {"query":"轮椅","ids":["demo-06"]},
+    {"query":"停运","ids":["demo-07"]},
+    {"query":"垃圾","ids":["demo-09"]},
+    {"query":"支付","ids":["demo-12"]},
+    {"query":"地铁跑酷","ids":["demo-10"]},
+    {"query":"准点","ids":["demo-03"]},
+    {"query":"换乘","ids":["demo-04","demo-06"]},
+    {"query":"异味","ids":["demo-09"]},
+    {"query":"火星独角兽","ids":[]}
+  ]
+}

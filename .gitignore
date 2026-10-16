@@ -56,7 +56,7 @@ tools/audit_smoke.py
 docs/audit/*/summary.json
 docs/audit/*/smoke.json
 docs/audit/*/verification.json
-data/
+/data/
 results/
 artifacts/
 docs/audit/*/inventory.csv
