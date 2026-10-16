@@ -1,0 +1,14 @@
+[
+  {"platform":"synthetic","content_id":"demo-01","text":"示例1号线今天非常拥挤，连续两班挤不上车。","city":"示例城A","line":"示例1号线","published_at":"2026-01-05T08:10:00+08:00"},
+  {"platform":"synthetic","content_id":"demo-02","text":"示例1号线晚点了十五分钟，赶到公司已经迟到。","city":"示例城A","line":"示例1号线","published_at":"2026-01-05T08:20:00+08:00"},
+  {"platform":"synthetic","content_id":"demo-03","text":"车厢很干净，这次还很准点，出行方便。","city":"示例城A","line":"示例2号线","published_at":"2026-01-05T09:10:00+08:00"},
+  {"platform":"synthetic","content_id":"demo-04","text":"换乘方便，但早高峰十分拥挤。","city":"示例城A","line":"示例2号线","published_at":"2026-01-05T08:30:00+08:00"},
+  {"platform":"synthetic","content_id":"demo-05","text":"出口的扶梯坏了，推着行李箱很不便。","city":"示例城A","line":"示例1号线","published_at":"2026-01-05T10:10:00+08:00"},
+  {"platform":"synthetic","content_id":"demo-06","text":"工作人员对轮椅乘客很友好，无障碍换乘也方便。","city":"示例城A","line":"示例2号线","published_at":"2026-01-05T11:10:00+08:00"},
+  {"platform":"synthetic","content_id":"demo-07","text":"示例1号线有故障停运传闻，尚未获得证实。","city":"示例城A","line":"示例1号线","published_at":"2026-01-05T12:10:00+08:00"},
+  {"platform":"synthetic","content_id":"demo-08","text":"今天地铁人多，记录一下车站情况。","city":"示例城A","line":"示例1号线","published_at":"2026-01-05T13:10:00+08:00"},
+  {"platform":"synthetic","content_id":"demo-09","text":"车厢闷热，还有一些垃圾和异味。","city":"示例城B","line":"示例3号线","published_at":"2026-01-06T08:10:00+08:00"},
+  {"platform":"synthetic","content_id":"demo-10","text":"地铁跑酷游戏又刷新了分数。","city":"示例城A","line":null,"published_at":"2026-01-06T09:10:00+08:00"},
+  {"platform":"synthetic","content_id":"demo-11","text":"地铁口租房广告，欢迎咨询。","city":"示例城A","line":null,"published_at":"2026-01-06T10:10:00+08:00"},
+  {"platform":"synthetic","content_id":"demo-12","text":"今天使用地铁支付，票价为示例金额，这里没有表达好恶。","city":"示例城B","line":"示例3号线","published_at":"2026-01-06T11:10:00+08:00"}
+]

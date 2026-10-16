@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling==1.32.4"]
+build-backend = "hatchling.build"
+
+[project]
+name = "metroinsight-agent"
+version = "0.1.0"
+description = "Reproducible, evidence-oriented transit feedback analysis"
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+license = "MIT"
+authors = [{name = "soso23412"}]
+dependencies = [
+  "pydantic>=2.10,<3",
+  "langgraph>=1.0,<2",
+]
+
+[project.scripts]
+metro-agent = "metro_agent.cli:main"
+
+[project.urls]
+Repository = "https://github.com/soso23412/metroinsight-agent"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.12,<1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/metro_agent"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/metro_agent", "tests", "scripts", "docs", "README.md", "AGENTS.md", "NOTICE.md", "LICENSE", "pyproject.toml", "uv.lock", ".python-version", ".github", ".gitignore", ".gitattributes"]
+exclude = ["docs/audit/2026-10-16/*.json", "docs/audit/2026-10-16/*.csv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib -ra"
+tmp_path_retention_count = 2
+tmp_path_retention_policy = "failed"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = ["legacy", "MediaCrawler", "wheels", "tools", ".cache"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
+
+[tool.uv]
+cache-dir = ".cache/uv"
