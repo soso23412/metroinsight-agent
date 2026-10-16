@@ -16,10 +16,15 @@
 | 界面 | 本机浏览器完成线路任务及无证据任务，截图为合成样例 |
 | 故障 | [30项风险目录](fault-catalog.md)，并非30个真实事故或线上恢复率 |
 | 模型费用 | 真实调用0；HTTP mock只验证协议和故障处理 |
+| 自动化测试 | 本地76/76；从GitHub清洁克隆的新venv中76/76 |
+| 远程CI | 提交0b8cfdc，Windows/Linux × Python3.12/3.13四组均成功 |
+| 安装包 | wheel资源齐全，仓库外site-packages导入及12/12任务通过 |
 
 结构化输出见[v02-contracts.json](v02-contracts.json)。数据源与题目均公开、已用于开发，绝不是独立盲测。运行记录ID、合同哈希、数据版本和逐题检查都可查阅。
 
 完整测试、打包、清洁安装和远程CI的最终记录在[本轮日志](../logs/2026-10-16-agent-delivery.md)收尾段。旧P1 CI只证明旧代码，不作新版结论。
+
+结构化验收信息见[v02-verification.json](v02-verification.json)，[远程运行](https://github.com/soso23412/metroinsight-agent/actions/runs/38883263236)可直接检查四组步骤。
 
 ## 尚未验证
 

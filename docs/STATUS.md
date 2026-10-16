@@ -6,6 +6,8 @@
 
 仓库：[soso23412/metroinsight-agent](https://github.com/soso23412/metroinsight-agent)。持续同步授权有效，仍在推送前检查公开文件。P1 的 CI 记录为历史；v0.2.0 的远程 CI 结果在本轮工作日志更新，不混用旧结果。
 
+v0.2.0代码提交`0b8cfdc`的[四组CI](https://github.com/soso23412/metroinsight-agent/actions/runs/38883263236)均成功；76项本地与独立克隆测试全部通过，wheel在仓库外12/12合成任务通过。具体证据见[verification](evaluation/v02-verification.json)。
+
 ## 当前能力
 
 - P1 流式导入、数据版本、严格 schema、评论关联、事务、标签缓存与离线报告。
@@ -37,5 +39,7 @@ uv run --frozen --offline metro-agent evaluate --output artifacts/evaluation
 ## 下一项需要真实证据的工作
 
 先由人复核规范与首批数据并冻结测试集；后续如获明确预算，再选择模型跑小样本在线验收及正式对照。工程可离线复现，不能在当前状态下填写真实业务效果指标。
+
+已准备本地`artifacts/review/xhs-development-pilot-40.json`及followup-40待复核包，均为历史开发数据、human_gold=false、Git忽略；不能充当盲测集。
 
 [本轮日志](logs/2026-10-16-agent-delivery.md) · [验收报告](evaluation/final-report.md) · [最初计划与差异](plans/2026-10-16-metro-agent-implementation.md)

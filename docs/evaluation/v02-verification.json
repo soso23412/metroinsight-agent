@@ -1,0 +1,18 @@
+{
+  "version":"0.2.0",
+  "code_commit":"0b8cfdc597c4f962b645ca4f2b6128b50acf7160",
+  "scope":"engineering verification; no live model or human blind-test quality claim",
+  "local":{"python":"3.12.13","tests_passed":76,"tests_failed":0,"lint":"passed","format":"passed"},
+  "clean_github_clone":{"new_environment":true,"locked_install":true,"shared_package_cache":true,"tests_passed":76,"tests_failed":0},
+  "wheel":{"version":"0.2.0","outside_checkout":true,"imported_from_site_packages":true,"web_resources_present":true,"synthetic_tasks_passed":12,"synthetic_tasks_total":12},
+  "github_actions":{
+    "id":38883263236,
+    "url":"https://github.com/soso23412/metroinsight-agent/actions/runs/38883263236",
+    "conclusion":"success",
+    "matrix":["ubuntu-latest / Python 3.12","ubuntu-latest / Python 3.13","windows-latest / Python 3.12","windows-latest / Python 3.13"],
+    "all_jobs_successful":true
+  },
+  "real_model_calls":0,
+  "human_gold_evaluation":false,
+  "limitations":["synthetic cases are public and development-visible","no invoice or model-quality measurements","API is localhost single process","no vector/OCR/MCP or Docker validation"]
+}

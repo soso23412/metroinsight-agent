@@ -34,3 +34,15 @@ README、STATUS、AGENTS、运行手册、数据卡、标注规范、旧标签�
 打包检查首次阻止了一个第三方`MediaCrawler/.env.example`示例文件：原先未锚定的include匹配了嵌套同名文件。现将发行白名单全部锚定到根目录，并显式排除历史、第三方、缓存和私有产物；重建后wheel 50项、sdist 98项，公开文件类型和必需Web/合成资源均检查通过。未发布此前的安装包。另将忽略规则`data/`改为根目录`/data/`，使文档`docs/data/`正常入Git，而私有数据目录仍忽略。
 
 最终本地验收：Python3.12.13下76项测试全部通过（12.63秒）；Ruff lint与80个文件格式检查通过，Git diff空白检查通过，Markdown本地链接无缺失。合成12/12任务与11个有证据查询Recall@5=1.0、1个空证据查询再次通过，真实模型调用0次。旧库SHA-256仍为`ee96ff059bc0edd5a702e6b83515b6d4003f5c7655a3b9acdd5fe1555b1cab44`。
+
+## GitHub与独立复现收尾
+
+代码提交`0b8cfdc597c4f962b645ca4f2b6128b50acf7160`已推送。[GitHub Actions 38883263236](https://github.com/soso23412/metroinsight-agent/actions/runs/38883263236)已完成且success，Windows/Linux × Python3.12/3.13四组均成功，包括76项测试、合成任务/检索合同、构建与公开包检查。
+
+从GitHub重新克隆到独立目录，用新venv、锁文件与共享的包下载缓存完成安装；76项测试再次全部通过（24.82秒）。缓存只复用公开依赖payload，不复用原虚拟环境、原始社媒数据或旧代码。
+
+将v0.2.0 wheel安装到该锁定环境，在仓库外工作目录导入，确认来自site-packages，HTML/JS与合成资源存在，12/12任务通过、模型调用0。首次wheel安装因Windows全局临时PE资源权限失败，改用项目内TMP/TEMP后成功；不声称任意空缓存环境能断网首次安装。
+
+结构化收尾证据见[v02-verification.json](../evaluation/v02-verification.json)。随后提交仅补充文档和运行证据；远程结果对应上述明确代码提交。
+
+使用既有只读规范库导出两份各40条的本地人工复核候选包：`artifacts/review/xhs-development-pilot-40.json`与`xhs-development-followup-40.json`，CLI明确human_gold=false，Git确认两份均被忽略。它们用于历史开发数据的规范试点，不进入新版盲测；未复制原文到公开文档。
