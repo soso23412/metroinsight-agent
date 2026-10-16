@@ -1,0 +1,40 @@
+{
+  "phase": "P1",
+  "checked_date": "2026-10-16",
+  "code_commit": "03c07c155ec54931ada9def3997fa0319706d248",
+  "repository": "https://github.com/soso23412/metroinsight-agent",
+  "scope": "Engineering reproducibility, not model quality",
+  "local": {
+    "python": "3.12.13",
+    "uv": "0.12.3",
+    "tests_passed": 30,
+    "lint": "passed",
+    "format": "passed",
+    "synthetic_demo_records": 12,
+    "model_calls": 0,
+    "legacy_database_unchanged": true,
+    "private_import_content_count": 80,
+    "private_import_comment_count": 571,
+    "comment_text_status": {"present": 556, "media_only": 14, "empty": 1}
+  },
+  "reproduction": {
+    "clean_github_clone": "passed",
+    "separate_virtual_environment": "passed",
+    "clean_clone_tests_passed": 30,
+    "clean_clone_demo": "passed",
+    "wheel_outside_checkout": "passed",
+    "wheel_and_sdist_private_file_inspection": "passed"
+  },
+  "github_actions": {
+    "run_id": 38869187149,
+    "url": "https://github.com/soso23412/metroinsight-agent/actions/runs/38869187149",
+    "conclusion": "success",
+    "matrix": [
+      {"os": "ubuntu-latest", "python": "3.12", "conclusion": "success"},
+      {"os": "ubuntu-latest", "python": "3.13", "conclusion": "success"},
+      {"os": "windows-latest", "python": "3.12", "conclusion": "success"},
+      {"os": "windows-latest", "python": "3.13", "conclusion": "success"}
+    ]
+  },
+  "not_verified": ["real model quality", "human gold labels", "autonomous tool calling", "RAG", "agent checkpoints", "live crawling"]
+}
