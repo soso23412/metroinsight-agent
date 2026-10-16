@@ -1,0 +1,166 @@
+{
+  "checked_date": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "method": "GitHub connector GET repository REST metadata; file reads use blob SHA. Job research via web search and page open. gh CLI and Exa failed due local networking; no credentials exposed.",
+  "repositories": [
+    {
+      "repo": "langchain-ai/langgraph",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "stars": 43341,
+      "default_branch": "main",
+      "license": "MIT",
+      "pushed_at": "2026-10-16T06:47:51Z",
+      "archived": false,
+      "description": "Build resilient agents."
+    },
+    {
+      "repo": "langchain-ai/open_deep_research",
+      "url": "https://github.com/langchain-ai/open_deep_research",
+      "stars": 12680,
+      "default_branch": "main",
+      "license": "MIT",
+      "pushed_at": "2026-08-10T18:13:37Z",
+      "archived": true,
+      "description": null
+    },
+    {
+      "repo": "langfuse/langfuse",
+      "url": "https://github.com/langfuse/langfuse",
+      "stars": 35889,
+      "default_branch": "main",
+      "license": "NOASSERTION",
+      "pushed_at": "2026-10-16T06:51:31Z",
+      "archived": false,
+      "description": "🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform."
+    },
+    {
+      "repo": "NanmiCoder/MediaCrawler",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "stars": 66956,
+      "default_branch": "main",
+      "license": "NOASSERTION",
+      "pushed_at": "2026-10-15T04:53:41Z",
+      "archived": false,
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫"
+    },
+    {
+      "repo": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "stars": 158611,
+      "default_branch": "main",
+      "license": "NOASSERTION",
+      "pushed_at": "2026-10-16T06:51:24Z",
+      "archived": false,
+      "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack."
+    },
+    {
+      "repo": "666ghj/BettaFish",
+      "url": "https://github.com/666ghj/BettaFish",
+      "stars": 42417,
+      "default_branch": "main",
+      "license": "GPL-2.0",
+      "pushed_at": "2026-10-16T03:33:52Z",
+      "archived": false,
+      "description": "微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。"
+    },
+    {
+      "repo": "langchain-ai/deepagents",
+      "url": "https://github.com/langchain-ai/deepagents",
+      "stars": 30322,
+      "default_branch": "main",
+      "license": "MIT",
+      "pushed_at": "2026-10-16T04:11:28Z",
+      "archived": false,
+      "description": "The batteries-included agent harness."
+    },
+    {
+      "repo": "vibrantlabsai/ragas",
+      "stars": 16039,
+      "url": "https://github.com/vibrantlabsai/ragas",
+      "license": "Apache-2.0",
+      "pushed_at": "2026-02-24T07:47:19Z",
+      "archived": false
+    }
+  ],
+  "inspected_files": [
+    {
+      "repo": "666ghj/BettaFish",
+      "path": "README.md",
+      "blob_sha": "c985ad330c50470378ea3cb0287bb8730c65cbb4",
+      "url": "https://github.com/666ghj/BettaFish/blob/main/README.md"
+    },
+    {
+      "repo": "666ghj/BettaFish",
+      "path": "QueryEngine/agent.py",
+      "blob_sha": "10859810c45100b37fe7a67b40c5c98b1b6c1431",
+      "url": "https://github.com/666ghj/BettaFish/blob/main/QueryEngine/agent.py"
+    },
+    {
+      "repo": "666ghj/BettaFish",
+      "path": "QueryEngine/agent.py",
+      "blob_sha": "10859810c45100b37fe7a67b40c5c98b1b6c1431",
+      "url": "https://github.com/666ghj/BettaFish/blob/main/QueryEngine/agent.py"
+    },
+    {
+      "repo": "langchain-ai/langgraph",
+      "path": "README.md",
+      "blob_sha": "97c31e9cb4d8fe56be8d768ce3eb5e22400e897e",
+      "url": "https://github.com/langchain-ai/langgraph/blob/main/README.md"
+    },
+    {
+      "repo": "langchain-ai/deepagents",
+      "path": "README.md",
+      "blob_sha": "efa13c884a5f984cf30c5da8f571fc9264e20216",
+      "url": "https://github.com/langchain-ai/deepagents/blob/main/README.md"
+    },
+    {
+      "repo": "langchain-ai/deepagents",
+      "path": "libs/deepagents/deepagents/graph.py",
+      "blob_sha": "5e08084b17ccbfc051ab891e35508f884813d4f7",
+      "url": "https://github.com/langchain-ai/deepagents/blob/main/libs/deepagents/deepagents/graph.py"
+    },
+    {
+      "repo": "langchain-ai/deepagents",
+      "path": "libs/deepagents/deepagents/graph.py",
+      "blob_sha": "5e08084b17ccbfc051ab891e35508f884813d4f7",
+      "url": "https://github.com/langchain-ai/deepagents/blob/main/libs/deepagents/deepagents/graph.py"
+    },
+    {
+      "repo": "vibrantlabsai/ragas",
+      "path": "README.md",
+      "blob_sha": "07b1f00fde50ee8506f3087326285041c1a1a05c",
+      "url": "https://github.com/vibrantlabsai/ragas/blob/main/README.md"
+    },
+    {
+      "repo": "langfuse/langfuse",
+      "path": "README.md",
+      "blob_sha": "3c4ad5773b846b6b1c16355640ebd87ff031f92e",
+      "url": "https://github.com/langfuse/langfuse/blob/main/README.md"
+    },
+    {
+      "repo": "langfuse/langfuse",
+      "path": "LICENSE",
+      "blob_sha": "cf2d4abed1de0891f5dd4a20490ee5033f011605",
+      "url": "https://github.com/langfuse/langfuse/blob/main/LICENSE"
+    },
+    {
+      "repo": "langgenius/dify",
+      "path": "LICENSE",
+      "blob_sha": "329ee302875f292fdd11e12e830562d0be9ade1c",
+      "url": "https://github.com/langgenius/dify/blob/main/LICENSE"
+    },
+    {
+      "repo": "langchain-ai/langgraph",
+      "path": "libs/prebuilt/langgraph/prebuilt/tool_node.py",
+      "blob_sha": "c0398f8f46e6f0cda3376fae6958e4713e51cbb6",
+      "url": "https://github.com/langchain-ai/langgraph/blob/main/libs/prebuilt/langgraph/prebuilt/tool_node.py"
+    }
+  ],
+  "limitations": [
+    "Repository stars are a point-in-time popularity measure, not quality evidence.",
+    "explodinggradients/ragas returned a permanent redirect; vibrantlabsai/ragas is the current checked repository.",
+    "open_deep_research is archived; retained only as historical reference.",
+    "No online model calls or crawler runs were made.",
+    "Dynamic job pages may be indexed despite an empty page body; availability and headcount are not verified."
+  ]
+}
